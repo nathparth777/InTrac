@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Display_details">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Id:"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scan"
+        android:textAllCaps="false"
+        android:text="Scan Barcode/QR"
+        android:textSize="25dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:textAllCaps="false"
+        android:text="Search"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Del"
+        android:visibility="gone"
+        android:text="Deleted Product"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/record"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:     "
+                android:id="@+id/name1"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textSize="30dp"
+                android:layout_toRightOf="@+id/name1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net Weight:   "
+                android:id="@+id/weight1"
+                android:textSize="30dp"
+                android:layout_below="@id/name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/weight"
+                android:textSize="30dp"
+                android:layout_below="@id/name"
+                android:layout_toRightOf="@id/weight1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MRP:       "
+                android:id="@+id/mrp1"
+                android:textSize="30dp"
+                android:layout_below="@id/weight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mrp"
+                android:textSize="30dp"
+                android:layout_below="@id/weight"
+                android:layout_toRightOf="@id/mrp1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID:            "
+                android:id="@+id/id1"
+                android:textSize="30dp"
+                android:layout_below="@id/mrp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id2"
+                android:textSize="30dp"
+                android:layout_below="@id/mrp"
+                android:layout_toRightOf="@id/id1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity: "
+                android:id="@+id/quantity1"
+                android:textSize="30dp"
+                android:layout_below="@id/id2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/quantity"
+                android:textSize="30dp"
+                android:layout_below="@id/id2"
+                android:layout_toRightOf="@id/quantity1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date:       "
+                android:id="@+id/date1"
+                android:textSize="30dp"
+                android:layout_below="@id/quantity"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:textSize="30dp"
+                android:layout_below="@id/quantity"
+                android:layout_toRightOf="@id/date1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manufacture:"
+                android:id="@+id/manufacture1"
+                android:textSize="30dp"
+                android:layout_below="@id/date"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/manufacture"
+                android:textSize="30dp"
+                android:layout_below="@id/date"
+                android:layout_toRightOf="@id/manufacture1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry:       "
+                android:id="@+id/expiry1"
+                android:textSize="30dp"
+                android:layout_below="@id/manufacture"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/expiry"
+                android:textSize="30dp"
+                android:layout_below="@id/manufacture"
+                android:layout_toRightOf="@id/expiry1"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/history"
+                android:text="Product history"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/expiry"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/modify"
+                android:textAllCaps="false"
+                android:text="Modify Product"
+                android:layout_below="@+id/history"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/norecord"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addproduct"
+            android:text="Add Product"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Record Found"
+            android:textSize="35dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.invento">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Global"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Message" />
+        <activity android:name=".Generate_QR" />
+        <activity android:name=".Admin_Scanner" />
+        <activity android:name=".AdminDisplay_Products" />
+        <activity android:name=".Employee_info" />
+        <activity android:name=".searchmodify_details2" />
+        <activity android:name=".searchmodify_details" />
+        <activity android:name=".SearchModify" />
+        <activity android:name=".AddDelete_Details2" />
+        <activity android:name=".AddDelete_Details" />
+        <activity android:name=".EmployeesDetails" />
+        <activity
+            android:name=".Employees"
+            android:parentActivityName=".Admin_Home" />
+        <activity android:name=".Add_ProfileDetail" />
+        <activity android:name=".Add_Employee" />
+        <activity android:name=".Admin_Home" />
+        <activity android:name=".Products_Details" />
+        <activity android:name=".Products" />
+        <activity android:name=".ProductHistory" />
+        <activity android:name=".DeleteScanner" />
+        <activity android:name=".Delete_Item" />
+        <activity android:name=".UpdateScanner" />
+        <activity android:name=".ModifyProduct" />
+        <activity android:name=".Displayscanner" />
+        <activity android:name=".Display_details" />
+        <activity android:name=".Scanner" />
+        <activity android:name=".Add_Item" />
+        <activity
+            android:name=".auth.Login"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
